@@ -1,4 +1,7 @@
 ### Hi there 👋
+I’m currently learning CS in Zhejiang University.
+I'll record my learning process and upload some small items that may be useful for newbies.
+Thanks for your reading (and even a staring😘)!
 
 <!--
 **OOtiss/OOtiss** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
