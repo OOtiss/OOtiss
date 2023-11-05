@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Node *PtrToNode;
+struct Node {
+    int Data; /* 存储结点数据 */
+    PtrToNode Next; /* 指向下一个结点的指针 */
+};
+typedef PtrToNode List; /* 定义单链表类型 */
+
+int main()
+{
+    int N, i;
+    struct Node L[1000];
+    scanf("%d",&N);
+    for(i=0;i<N-1;i++){
+        L[i].Data=i+1;
+        L[i].Next=&L[i+1];
+    }L[i].Data=i+1;L[i].Next=&L[0];
+    List begin=&L[0];
+    while((*begin).Next!=begin){
+        begin=(*begin).Next;
+        (*begin).Next=(*(*begin).Next).Next;
+        begin=(*begin).Next;
+    }
+    printf("%d",(*begin).Data);
+}
